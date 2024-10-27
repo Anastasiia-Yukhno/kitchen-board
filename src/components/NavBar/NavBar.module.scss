@@ -1,0 +1,118 @@
+.Navbar {
+    width: 100vw;
+    background-color: #e6e6e6;
+}
+
+.Logo {
+    margin: 10px;
+    font-size: 20px;
+    color: #090909;
+    display: flex;
+
+    & svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+
+.DekstopNav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.NavLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    & a {
+
+        background: #f3f3f3;
+        display: flex;
+        align-items: center;
+
+        padding: 20px 20px;
+
+        text-decoration: none;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #090909;
+
+        & svg {
+            margin-right: 10px;
+        }
+    }
+
+}
+
+@media (min-width: 769px) {
+    .NavLinks {
+        & a {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+.MobileNav {
+    display: none;
+}
+
+.MenuPanel {
+    display: flex;
+
+    & a {
+        margin: 15px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Logo {
+        & svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        margin-left: 20px;
+        font-size: 15px;
+        display: flex;
+    }
+
+    .DekstopNav {
+        display: none;
+    }
+
+    .MobileNav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        width: 100%;
+        background: #e6e6e6;
+        padding-top: 20px;
+
+        .NavLinks {
+            position: sticky;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            min-height: 30vh;
+            width: 100%;
+        }
+    }
+}
+
+
+
+.MenuButton {
+    position: fixed;
+    right: 10px;
+
+}

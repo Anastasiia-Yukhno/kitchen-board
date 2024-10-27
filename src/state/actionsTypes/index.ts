@@ -1,0 +1,6 @@
+// export const GET_WEEK_MENU = 'GET_WEEK_MENU'
+export const CHANGE_WEEK = 'CHANGE_WEEK'
+export const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE'
+export const CHANGE_LANGUAGE_MENU = 'CHANGE_LANGUAGE_MENU'
+
+
