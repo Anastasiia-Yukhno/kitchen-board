@@ -23,7 +23,7 @@ const MainPage = () => {
       </div>
 
       <div className={styles.Link}>
-        <Link to="/language">
+        <Link to="/settings">
           <Language />
           {LinkToLanguage[language]}
           <Right />
